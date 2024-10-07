@@ -1,0 +1,176 @@
+Pattern 1:
+
+Run 1:
+Parent (42601) created process 1 (42606)
+Child Process 1 starting: sleeping for 6 seconds
+Parent (42601) created process 2 (42607)
+Child Process 2 starting: sleeping for 1 seconds
+Parent (42601) created process 3 (42608)
+Child Process 3 starting: sleeping for 3 seconds
+Child Process 2 (42607) exiting...
+Child Process 3 (42608) exiting...
+Child Process 1 (42606) exiting...
+Parent process done waiting...
+
+Run 2:
+Parent (42632) created process 1 (42633)
+Child Process 1 starting: sleeping for 6 seconds
+Parent (42632) created process 2 (42634)
+Child Process 2 starting: sleeping for 7 seconds
+Parent (42632) created process 3 (42635)
+Child Process 3 starting: sleeping for 4 seconds
+Parent (42632) created process 4 (42636)
+Child Process 4 starting: sleeping for 4 seconds
+Parent (42632) created process 5 (42637)
+Child Process 5 starting: sleeping for 4 seconds
+Parent (42632) created process 6 (42638)
+Child Process 6 starting: sleeping for 5 seconds
+Parent (42632) created process 7 (42639)
+Child Process 7 starting: sleeping for 2 seconds
+Child Process 7 (42639) exiting...
+Child Process 3 (42635) exiting...
+Child Process 5 (42637) exiting...
+Child Process 4 (42636) exiting...
+Child Process 6 (42638) exiting...
+Child Process 1 (42633) exiting...
+Child Process 2 (42634) exiting...
+Parent process done waiting...
+
+Run 3:
+Parent (42666) created process 1 (42667)
+Child Process 1 starting: sleeping for 6 seconds
+Parent (42666) created process 2 (42668)
+Child Process 2 starting: sleeping for 2 seconds
+Parent (42666) created process 3 (42669)
+Child Process 3 starting: sleeping for 5 seconds
+Parent (42666) created process 4 (42670)
+Child Process 4 starting: sleeping for 7 seconds
+Parent (42666) created process 5 (42671)
+Child Process 5 starting: sleeping for 3 seconds
+Parent (42666) created process 6 (42672)
+Child Process 6 starting: sleeping for 1 seconds
+Parent (42666) created process 7 (42673)
+Child Process 7 starting: sleeping for 2 seconds
+Parent (42666) created process 8 (42674)
+Child Process 8 starting: sleeping for 1 seconds
+Parent (42666) created process 9 (42675)
+Child Process 9 starting: sleeping for 3 seconds
+Parent (42666) created process 10 (42676)
+Child Process 10 starting: sleeping for 5 seconds
+Child Process 6 (42672) exiting...
+Child Process 8 (42674) exiting...
+Child Process 2 (42668) exiting...
+Child Process 7 (42673) exiting...
+Child Process 5 (42671) exiting...
+Child Process 9 (42675) exiting...
+Child Process 3 (42669) exiting...
+Child Process 10 (42676) exiting...
+Child Process 1 (42667) exiting...
+Child Process 4 (42670) exiting...
+Parent process done waiting...
+
+Pattern 2:
+
+Run 1:
+Parent created child 0 (42690)
+Child Process 0 (42690) starting...
+Child Process 0 (42690) sleeping for 5 seconds after creating child 1 (42691)
+Child Process 1 (42691) starting...
+Child Process 1 (42691) sleeping for 5 seconds after creating child 2 (42692)
+Child Process 2 (42692) starting...
+Child Process 2 (42692) sleeping for 1 seconds after creating child 3 (42693)
+Child Process 3 (42693) starting...
+Child Process 3 (42693) sleeping for 1 seconds [no child created]
+Child Process 2 (42692) waiting for child 3 (42693)
+Child Process 3 (42693) exiting
+Child process 2 (42692) exiting
+Child Process 0 (42690) waiting for child 1 (42691)
+Child Process 1 (42691) waiting for child 2 (42692)
+Child process 1 (42691) exiting
+Child process 0 (42690) exiting
+Child 0 (42690) has exited
+All children exited
+
+Run 2:
+Parent created child 0 (42724)
+Child Process 0 (42724) starting...
+Child Process 0 (42724) sleeping for 4 seconds after creating child 1 (42725)
+Child Process 1 (42725) starting...
+Child Process 1 (42725) sleeping for 7 seconds after creating child 2 (42726)
+Child Process 2 (42726) starting...
+Child Process 2 (42726) sleeping for 1 seconds after creating child 3 (42727)
+Child Process 3 (42727) starting...
+Child Process 3 (42727) sleeping for 6 seconds after creating child 4 (42728)
+Child Process 4 (42728) starting...
+Child Process 4 (42728) sleeping for 5 seconds after creating child 5 (42729)
+Child Process 5 (42729) starting...
+Child Process 5 (42729) sleeping for 5 seconds after creating child 6 (42730)
+Child Process 6 (42730) starting...
+Child Process 6 (42730) sleeping for 4 seconds after creating child 7 (42731)
+Child Process 7 (42731) starting...
+Child Process 7 (42731) sleeping for 4 seconds [no child created]
+Child Process 2 (42726) waiting for child 3 (42727)
+Child Process 0 (42724) waiting for child 1 (42725)
+Child Process 7 (42731) exiting
+Child Process 6 (42730) waiting for child 7 (42731)
+Child process 6 (42730) exiting
+Child Process 4 (42728) waiting for child 5 (42729)
+Child Process 5 (42729) waiting for child 6 (42730)
+Child process 5 (42729) exiting
+Child process 4 (42728) exiting
+Child Process 3 (42727) waiting for child 4 (42728)
+Child process 3 (42727) exiting
+Child process 2 (42726) exiting
+Child Process 1 (42725) waiting for child 2 (42726)
+Child process 1 (42725) exiting
+Child process 0 (42724) exiting
+Child 0 (42724) has exited
+All children exited
+
+Run 3:
+Parent created child 0 (42745)
+Child Process 0 (42745) starting...
+Child Process 0 (42745) sleeping for 1 seconds after creating child 1 (42746)
+Child Process 1 (42746) starting...
+Child Process 1 (42746) sleeping for 7 seconds after creating child 2 (42747)
+Child Process 2 (42747) starting...
+Child Process 2 (42747) sleeping for 2 seconds after creating child 3 (42748)
+Child Process 3 (42748) starting...
+Child Process 3 (42748) sleeping for 6 seconds after creating child 4 (42749)
+Child Process 4 (42749) starting...
+Child Process 4 (42749) sleeping for 5 seconds after creating child 5 (42750)
+Child Process 5 (42750) starting...
+Child Process 5 (42750) sleeping for 1 seconds after creating child 6 (42751)
+Child Process 6 (42751) starting...
+Child Process 6 (42751) sleeping for 4 seconds after creating child 7 (42752)
+Child Process 7 (42752) starting...
+Child Process 7 (42752) sleeping for 6 seconds after creating child 8 (42753)
+Child Process 8 (42753) starting...
+Child Process 8 (42753) sleeping for 2 seconds after creating child 9 (42754)
+Child Process 9 (42754) starting...
+Child Process 9 (42754) sleeping for 4 seconds after creating child 10 (42755)
+Child Process 10 (42755) starting...
+Child Process 10 (42755) sleeping for 4 seconds [no child created]
+Child Process 0 (42745) waiting for child 1 (42746)
+Child Process 5 (42750) waiting for child 6 (42751)
+Child Process 2 (42747) waiting for child 3 (42748)
+Child Process 8 (42753) waiting for child 9 (42754)
+Child Process 6 (42751) waiting for child 7 (42752)
+Child Process 9 (42754) waiting for child 10 (42755)
+Child Process 10 (42755) exiting
+Child process 9 (42754) exiting
+Child process 8 (42753) exiting
+Child Process 4 (42749) waiting for child 5 (42750)
+Child Process 3 (42748) waiting for child 4 (42749)
+Child Process 7 (42752) waiting for child 8 (42753)
+Child process 7 (42752) exiting
+Child process 6 (42751) exiting
+Child process 5 (42750) exiting
+Child process 4 (42749) exiting
+Child process 3 (42748) exiting
+Child process 2 (42747) exiting
+Child Process 1 (42746) waiting for child 2 (42747)
+Child process 1 (42746) exiting
+Child process 0 (42745) exiting
+Child 0 (42745) has exited
+All children exited
